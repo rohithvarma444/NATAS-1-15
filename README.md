@@ -1,27 +1,39 @@
 ﻿**OVERTHEWIRE:NATAS**
+
+ 
 **LEVEL 0 -> Level 15 Writeups**
-**https://overthewire.org/wargames/natas/**
+
+
+> **https://overthewire.org/wargames/natas/**
+
+
 
 **Natas-0**
+
 \*Found the password for natas1 in the source page.
 <!--The password for natas1 is g9D9cREhslqBKtcA2uocGHPfMZVzeFK6 -->
 **Natas-1**
+
 \*Found the password by accessing the page source from developer tools in chrome.
 <!--The password for natas2 is h4ubbcXrWqs To7GGnnUMLppXb0ogfBZ7-->
 
 **Natas-2**
+
 \*Got the password in users.txt file which is present inside the files directory of the website 
 Password:G6ctbMJ5Nb4cbFwhpMPSvxGHhQ7I6W8Q
 
 **Natas-3**
+
 \*The hidden directory was identified by using /robots.txt.
 Password:tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm
 
 **Natas-4:**
+
 \*Changed the default referrer by using the referrer controller.
 Password:Z0NsrtIkJoKALBCLi5eqFfcRN82Au2oD
 
 **Natas-5**
+
 \*Login credentials were saved in browsers as cookies so changed the cookie and got the access.
 Password:fOIvE0MDtPTgRhqmmvvAOt2EfXR6uQgR
 
@@ -68,6 +80,7 @@ Used burp suite and changed the file that opened from .jpg to .php and accessed 
 Password:lW3jYRI02ZKDBb8VtQBU1f6eDRo6WEj9
 
 **Natas-13**
+
 \*Learned that the website identifies the jpg by the first four bits of hexadecimal code.
 \*Used hexeditor to change the first 4 bytes and then uploaded the file.
 \*Intercepted the upload using burpsuite and then changed the input to php.
